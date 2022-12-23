@@ -83,18 +83,6 @@ export class HrEmailAdd extends Component {
         const {item} = this.state;
         const title = <h2>{this.props.params.id !== 'new' ? 'Edit Hr Email' : 'Add Hr Email'}</h2>;
 
-        const url = this.url.getUrl();
-
-        const comp = fetch(url+ '/companies');
-
-        console.log(comp.json())
-
-        // let res = body2.map(rec => {
-        //     return <select key={rec.company_id}>
-        //         <option value=rec.companyName> s </option>
-        //     </select>
-        // });
-
         return (
             <div>
                 <Container>
